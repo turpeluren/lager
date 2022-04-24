@@ -2,14 +2,14 @@ import { StatusBar } from 'expo-status-bar';
 import { Image, StyleSheet, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import Stock from './components/Stock.tsx';
-import warehouse from './assets/warehouse.jpg';
+import warehouse from './assets/textil.jpg';
 
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.base}>
-        <Text style={{color: '#33c', fontSize: 42}}>Lager-Appen</Text>
-        <Image source={warehouse} style={{ width: 320, height: 150 }} />
+        <Text style={{color: '#Fad', fontSize: 42, paddingBottom: 16}}>Tures Textilier - Lagerinfo</Text>
+        <Image source={warehouse} style={{ width: 320, height: 175 }} />
         <Stock></Stock>
         <StatusBar style="auto" />
       </View>
@@ -26,10 +26,11 @@ const styles = StyleSheet.create({
   },
   base: {
     flex: 1,
-    backgroundColor: '#fff',
-    paddingLeft: 12,
-    paddingRight: 12,
-    paddingTop: 12,
-    alignItems: 'center',
+    backgroundColor: '#444',
+    paddingLeft: 26,
+    paddingRight: 26,
+    paddingTop: 24,
+    alignItems: 'flex-start',
+    textAlign: 'left',
   }
 });
